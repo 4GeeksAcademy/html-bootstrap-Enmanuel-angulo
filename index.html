@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="styles.css">
+  <title>Instagram Bootstrap</title>
+</head>
+<body>
+  <header>
+    <section class="info_arriba">
+      <img class="img_info_arriba" src="https://cdn.discordapp.com/attachments/1321922360231723070/1349176190606381138/instagram.png?ex=67d225be&is=67d0d43e&hm=4801b861dee704638e5d8389a0322f1fbee27322c41042626d76796109837f25&" alt="Instagram">
+      <h3>Instagram</h3>
+    </section>
+    <section class="pepe">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="imagenes" src="https://cdn.discordapp.com/attachments/1321922360231723070/1349176190266511474/configuracion2.png?ex=67d225be&is=67d0d43e&hm=48de288b282af930e3754f92409acedabb44eeaa4622c8ebb531166d926a8f6c&" alt="Configuración">
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">Config</button></li>
+          <li><button class="dropdown-item" type="button">Public</button></li>
+          <li><button class="dropdown-item" type="button">Leave</button></li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventana_emergente">Publicar</button>
+      <div class="modal fade" id="ventana_emergente" tabindex="-1" aria-labelledby="ventana_emergentemodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="victorModalLabel">Crear nueva publicación</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6 class="text-muted">Tu publicación</h6>
+              <textarea class="form-control" rows="2" placeholder="Tu texto o imagen aquí" onclick="this.placeholder=''"></textarea>
+              <div>
+                <button type="button" class="btn btn"><img class="imagenes" src="https://cdn.discordapp.com/attachments/1321922360231723070/1349176190006460468/camara.png?ex=67d225be&is=67d0d43e&hm=790796a224a673f9cc1fcf0cc108c78c8ff6f79a9a40077b00d12da2ec278dc8&" alt="Cámara"></button>
+                <button type="button" class="btn btn"><img class="imagenes" src="https://cdn.discordapp.com/attachments/1321922360231723070/1349176190836932618/ubicacion.png?ex=67d225be&is=67d0d43e&hm=ce14e5a645a25a7783dc28e03838a326d347926e374a34a6a95244e9514dfd1d&" alt="Ubicación"></button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-success">Publicar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <div class="container my-4">
+    <div class="botones_cambio">
+      <button id="boton_izquierda" type="button" class="btn btn-primary mb-4" onclick="showImagesSection()">Mostrar Imágenes</button>
+      <button id="boton_derecha" type="button" class="btn btn-primary mb-4" onclick="showInfoSection()">Mostrar Información</button>
+    </div>
+    <div id="images-section" class="row">
+      <div class="col-md-4 img-container">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKsrsGXOSpzBS_0Kcn1wN_HgWBut66BlrvQ&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZpCWjAMK2_Hu_p6L0FGa6dePRnDEtsizlw&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLbcl3KPyMJT1fv52ZYrg8LM8yIO_cH8BzDw&s" alt="">
+      </div>
+      <div class="col-md-4 img-container">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzi-WwZBGMFaCgePXQEJ38P93p8T8azL9QUA&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpk8Hgr3PFyhqOsp16xbevLEVTotnxhvW4Q&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYGuFzoHUrjnDOKQCdvEbYa5WxmSqH683XfQ&s" alt="">
+      </div>
+      <div class="col-md-4 img-container">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa_4l1qr6XfpLsHjC9PKhPimJGbzHpcQovjw&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpByfvmqvOFNMBNRp5gmT77D2zrFYZMVSVKA&s" alt="">
+        <img class="img_contenido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7Ueid65Yvc-93uXCQOX8gic1CXvR5CLZaw&s" alt="">
+      </div>
+    </div>
+    <div id="info-section" class="section-hidden">
+      <div class="card">
+        <div class="card-body">
+          <div class="info-card">
+            <h5 class="card-title">Img1</h5>
+            <p class="card-number">08/157</p>
+          </div>
+          <img class="img_info" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKsrsGXOSpzBS_0Kcn1wN_HgWBut66BlrvQ&s" alt="Imagen 1">
+          <h6 class="likes">likes 687</h6>
+          <p>informacion de la imagen</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+          <div class="info-card">
+            <h5 class="card-title">Img2</h5>
+            <p class="card-number">09/200</p>
+          </div>
+          <img class="img_info" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpk8Hgr3PFyhqOsp16xbevLEVTotnxhvW4Q&s" alt="Imagen 2">
+          <h6 class="likes">likes 887</h6>
+          <p>informacion de la imagen</p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+                            <div class="info-card">
+                                <h5 class="card-title">Img3</h5>
+                                <p class="card-number">10/290</p>
+                            </div>
+                            <img class="img_info"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7Ueid65Yvc-93uXCQOX8gic1CXvR5CLZaw&s" alt="">
+                            <h6>likes 1007</h6>
+                            <p class="card-text">informacion imagen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+                function showImagesSection() {
+                  document.getElementById('images-section').style.display = 'flex';
+                  document.getElementById('info-section').style.display = 'none';
+                }
+          
+                function showInfoSection() {
+                  document.getElementById('images-section').style.display = 'none';
+                  document.getElementById('info-section').style.display = 'block';
+                }
+              </script>
+        </section>
+    </body>
+    
+</html>

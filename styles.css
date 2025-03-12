@@ -1,0 +1,68 @@
+
+.imagenes {
+    height: 20px;
+    width: 20px;
+}
+.Imagenes_publicacion {
+    display: flex;
+}
+
+.info_arriba {
+    display: flex;
+}
+.img_info_arriba {
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.pepe {
+    display: flex;
+    margin-right: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.dropdown {
+    margin-right: 5px;
+}
+
+.botones_cambio {
+    display: flex;
+    justify-content: center;
+}
+
+#boton_izquierda {
+    margin-right: 5px;
+}
+
+.img_contenido {
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+#info-section {
+    margin: auto;
+    width: 500px ;
+    height: auto;
+}
+   
+.info-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_info {
+    width: 469px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
